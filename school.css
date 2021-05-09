@@ -1,0 +1,100 @@
+:root {
+    --accent: #5CAFE9;
+    --accent2: #676767;
+}
+
+iframe {
+    width: 200px;
+    height: 120px;
+    border: 5px solid black;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    margin-left: 10px;
+    transition: width 2s, height 2s;
+}
+
+iframe:hover {
+    width: 500px;
+    height: 300px;
+}
+
+h1 {
+    outline-style: dashed;
+    outline-color: #144262;
+    background-color: #5CAFE9;
+    width: 200px;
+}
+
+h1:hover {
+    outline-style: dashed;
+    outline-color: #144262;
+    background-color: var(--accent);
+    width: 900px;
+    transition: width 2s;
+  
+}
+
+footer {
+    background-color: var(--accent);
+    outline-color: #144262;
+    outline-style: dashed;
+    width: 300px;
+}
+
+footer:hover {
+    background-color: var(--accent);
+    outline-color: #144262;
+    outline-style: dashed;
+    width: 900px;
+    transition: width 2s;
+}
+
+.rainbowText {
+    background-image: linear-gradient(to right, #2e62ff, #0099ff, #00ff00, #ffde3b, #ff3399, #6666ff, #ff3399, #ffde3b, #00ff00, #0099ff, #2e62ff);
+    animation: gradient-border 2s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+}
+
+@keyframes gradient-border {
+
+    0%,
+    200% {
+        background-position: 0 0;
+    }
+
+    99.9999999999999999% {
+        background-position: -130% 0;
+    }
+}
+
+h2 {
+    visibility: visible;
+    pointer-events: none;
+    background-image: linear-gradient(to right, #2e62ff, #0099ff, #00ff00, #ffde3b, #ff3399, #6666ff, #ff3399, #ffde3b, #00ff00, #0099ff, #2e62ff);
+    animation: gradient-border 2s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    font-size: 48px;
+}
+
+body {
+  background-color: gray;
+}
+
+
+h3 {
+  font-size: 64px!important;
+      visibility: visible;
+    pointer-events: none;
+    background-image: linear-gradient(to right, #676767, #4B4848, #3A3535, #211C1C, #130F0F, #382828, #130F0F, #211C1C, #3A3535, #4B4848, #676767);
+    animation: gradient-border 2s linear infinite;
+    background-size: 400% 100%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    font-size: 48px;
+}
+
+
